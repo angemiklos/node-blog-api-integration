@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to HyperDev!</title>
+    <meta name="description" content="Blogs about Life">
+    <link id="favicon" rel="icon" href="https://hyperdev.com/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Blogs</h1>
+      </header>
+      <main>
+        <section>
+          <h2>My Blog</h2>
+          <form id="js-blog-api-form">
+            <label for="blog-title-entry">Add an entry title</label>
+            <input type="text" name="blog-title-entry" id="js-new-title" placeholder="e.g., My Summer Vacay">
+            <label for="blog-author-entry">Add your name</label>
+            <input type="text" name="blog-author-entry" id="js-new-author" placeholder="e.g., Ann Frank">
+            <label for="blog-details-entry">Add details</label>
+            <input type="text-area" name="blog-details-entry" id="js-new-item" placeholder="e.g., It was something else.">
+            <button type="submit">Add blog</button>
+          </form>
+
+          <ul class="blog-posts js-blog-posts">
+          </ul>
+        </section>
+      </main>
+    </div>
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+  </body>
+</html>
