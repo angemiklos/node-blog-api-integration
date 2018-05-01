@@ -1,4 +1,4 @@
-gitconst express = require('express');
+const express = require('express');
 
 // include the logger lib 
 const morgan = require('morgan');
@@ -29,14 +29,14 @@ app.use('/blog-posts', blogRouter);
 // server for testing.
 let server;
 
-function runServer(){
+function runServer() {
     const port = process.env.PORT || 8080;
     return new Promise((resolve, reject) => {
         server = app.listen(port, () => {
             console.log(`Your app is listening on port ${port}`);
             resolve(server);
         }).on('error', err => {
-            reject(err);
+            reject(err)
         });
     });
 }
@@ -56,7 +56,7 @@ function closeServer() {
 
 // for the case where the server is started directly, like
 // using `nodemon server.js`, then we need this block.
-if (require.main) === module {
+if (require.main === module) {
     runServer().catch(err => console.error(err));
 };
 
