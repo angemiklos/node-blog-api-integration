@@ -58,10 +58,8 @@ describe('Blog Post', function() {
               expect(res.body.id).to.not.equal(null);
 
               const expectedKeys = ['id','title', 'content', 'author', 'publishDate'];
-              res.body.forEach(function(item) {
-                  expect(item).to.be.a('object');
-                  expect(item).to.include.keys(expectedKeys);
-                });
+              expect(res.body).to.be.a('object');
+              expect(res.body).to.include.keys(expectedKeys);
             });
     });
 
