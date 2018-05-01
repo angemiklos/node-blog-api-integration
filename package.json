@@ -1,5 +1,5 @@
 {
-  "name": "anges-node-blog-api-integration",
+  "name": "node-blog-api-integration",
   "version": "1.0.0",
   "description": "Blog app demo to practice writing test code",
   "main": "server.js",
