@@ -1,0 +1,10 @@
+language: node_js
+node_js: node_js
+deploy:
+  provider: heroku
+  api_key:
+    secure: MlJfZ/ko4wYq7IKsgsy+r38T3yL7HaGvpnTCNWD5Xgmx7ec+H7eh6ur6NO1HOkDp01SCrJU3St3N6iO8pw5e47LM0PuWREcwwK38BLCpjh//Z8EzQZEnUM7K33vrLZInitMITkvRBOJ36mJCWK/Q7lIhXAc5sJRCR4Lw9EoQdrKpp20Yr+DmWTilKSBb6G329EFjHHd2hg2zehyREJ6XgoKON6TspqojnMKAC0WXDvpaApT6Rl+HSy09fjSOaenFu3Wqs8NaTq2bPdWXpvTE3tCsy3yf8To1at9J5WZBW2wpQhSUORLmAtVI+d2BKJxfqzrb+WbN93805pK7izxk4HfD86SYnt2607xUBhCnlIKoxtAuFR5dPtHNS7oLMSGAOMY53h/vRFJQ5BSVBt6NvkEAEXYEg8890CbodEP8HzCrTR3F/pHQqhMb+N6+SuZyk8mZ2LiRGnPHo22/n2mLex+9YElbhupDM+YMnd1sjqp2/ZDAM0uc9RGo5Ay9Qy5/OgnfAlPXrdZDOTJbeK4ULCvs7jZ1knxnBKLkEIXKnNs6Rh7dzuRIEtOm+bVBhvFdyKrVf51KxlzPeAzk0T4syBtkHhxEgBEZgDulkg6Aovno6FRGf7j33HaQlkl5+69bYWzbNY/PZFNlwjoHycBtPWH1yoHoZaVbf3HPK29pY5A=
+  app: murmuring-sea-34228
+  skip_cleanup: true
+  on:
+    repo: angemiklos/node-blog-api-integration
