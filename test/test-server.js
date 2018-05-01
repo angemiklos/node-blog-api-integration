@@ -56,7 +56,6 @@ describe('Blog Post', function() {
               expect(res).to.have.status(201);
               expect(res).to.be.json;
               expect(res.body.id).to.not.equal(null);
-              expect(res.body).to.deep.equal(Object.assign(newItem, {id: res.body.id}));
 
               const expectedKeys = ['id','title', 'content', 'author', 'publishDate'];
               res.body.forEach(function(item) {
